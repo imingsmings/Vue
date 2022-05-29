@@ -4,37 +4,14 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
     <title>Slot</title>
   </head>
   <body>
-    <div id="app">
-      <my-info name="wxm" age="24" occupation="Officer">
-        This is the information of wxm
-      </my-info>
-      <my-article>
-        <p slot="title">This is title</p>
-        <span slot="author">wxm </span>
-        <span slot="dateTime">2022.01.01</span>
-        <p slot="content">THis is content</p>
-      </my-article>
-    </div>
-    <template id="my-article">
-      <style>
-        h1,
-        p {
-          color: red;
-        }
-      </style>
-      <h1 class="my-artcile-title">
-        <slot name="title" class="title"></slot>
-        <slot name="author" class="author"></slot>
-        <slot name="dateTime" class="dateTime"></slot>
-      </h1>
-      <div class="my-article-content">
-        <slot name="content" class="content"></slot>
-      </div>
-    </template>
-    <div id="app1"></div>
+    <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

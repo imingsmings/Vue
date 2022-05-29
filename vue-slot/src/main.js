@@ -1,6 +1,6 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 
-import './webcomponents';
+// import './webcomponents';
 
-createApp(App).mount('#app1');
+createApp(App).mount('#app');
